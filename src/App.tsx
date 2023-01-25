@@ -1,5 +1,15 @@
+import React from 'react';
+import Header from './components/Layout/Header';
+import { ThemeProvider } from './context/ThemeContext';
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;
